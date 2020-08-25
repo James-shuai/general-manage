@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@172.16.99.100:1521/yccy
+    username: eisoo
+    password: eisoo
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+mybatis-plus:
+  # 指定实体类所有包
+  type-aliases-package: com.generalmanage
+  #是否控制台 print mybatis-plus 的 LOGO
+  global-config:
+    banner: false
